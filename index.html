@@ -1,0 +1,132 @@
+export default function TeamVitinhoSite() {
+  const goldLink = 'https://pages.mfitpersonal.com.br/p/2koi?checkout=true';
+  const platinumLink = 'https://pages.mfitpersonal.com.br/p/2koy?checkout=true';
+
+  return (
+    <div className="min-h-screen px-6 py-14 md:py-20 bg-gradient-to-b from-zinc-900 via-zinc-950 to-black text-zinc-100">
+
+      <div className="max-w-5xl mx-auto">
+
+        {/* LOGO */}
+        <div className="flex justify-center">
+          <div className="rounded-[28px] border border-zinc-700 bg-zinc-900 px-8 py-6 shadow-lg">
+            <p className="text-center text-4xl font-black tracking-tight text-white">
+              TEAM <span className="text-red-500">VITINHO</span>
+            </p>
+          </div>
+        </div>
+
+        {/* HERO */}
+        <section className="mt-10 text-center">
+
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
+            <a href="#planos" className="rounded-full border border-blue-400/30 bg-blue-500/10 px-5 py-2 text-sm font-semibold text-blue-300 hover:bg-blue-500/20">Planos</a>
+            <a href="#sobre" className="rounded-full border border-blue-400/30 bg-blue-500/10 px-5 py-2 text-sm font-semibold text-blue-300 hover:bg-blue-500/20">Sobre</a>
+            <a href="#faq" className="rounded-full border border-blue-400/30 bg-blue-500/10 px-5 py-2 text-sm font-semibold text-blue-300 hover:bg-blue-500/20">FAQ</a>
+          </div>
+
+          <h1 className="mt-6 text-4xl md:text-5xl font-black tracking-tight text-white">
+            Acompanhamento direto com treino ajustado à sua realidade
+          </h1>
+
+          <p className="mt-4 text-lg text-zinc-300 max-w-2xl mx-auto">
+            Um processo claro, personalizado e focado na sua evolução — no seu ritmo e dentro da sua rotina.
+          </p>
+
+        </section>
+
+        {/* PLANOS */}
+        <section id="planos" className="mt-16">
+          <div className="text-center">
+            <h2 className="text-3xl font-black text-white">Escolha seu plano</h2>
+          </div>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+
+            {/* GOLD */}
+            <div className="rounded-3xl border border-yellow-500/30 bg-zinc-900 p-8 shadow-xl hover:shadow-yellow-500/10 transition">
+              <p className="font-bold text-yellow-400">Plano Gold</p>
+              <p className="text-3xl mt-2 text-white">R$300</p>
+              <p className="text-sm text-yellow-300 mt-1">3 meses de acompanhamento</p>
+
+              <ul className="mt-4 space-y-2 text-zinc-300">
+                <li>Treino personalizado para o seu objetivo</li>
+                <li>Correção da execução dos exercícios</li>
+                <li>Ajustes no treino conforme sua evolução</li>
+                <li>Suporte para tirar dúvidas</li>
+              </ul>
+
+              <a href={goldLink} className="block mt-6 bg-gradient-to-r from-yellow-400 via-yellow-500 to-amber-600 text-white text-center py-3 rounded-xl font-semibold hover:brightness-110 transition">
+                Contratar
+              </a>
+            </div>
+
+            {/* PLATINUM */}
+            <div className="relative rounded-3xl border-2 border-cyan-400 bg-zinc-900 p-8 shadow-2xl shadow-cyan-400/20 scale-105 hover:scale-110 transition">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-cyan-400 text-zinc-900 text-xs font-bold px-3 py-1 rounded-full shadow">
+                MAIS ESCOLHIDO
+              </div>
+
+              <p className="font-bold text-cyan-300">Plano Platinum</p>
+              <p className="text-3xl mt-2 text-white">R$500</p>
+              <p className="text-sm text-cyan-300 mt-1">6 meses de acompanhamento</p>
+
+              <ul className="mt-4 space-y-2 text-zinc-300">
+                <li>Treino personalizado para o seu objetivo</li>
+                <li>Correção da execução dos exercícios</li>
+                <li>Ajustes no treino conforme sua evolução</li>
+                <li>Suporte prioritário para tirar dúvidas</li>
+                <li>Troca do treino entre 8–12 semanas</li>
+              </ul>
+
+              <a href={platinumLink} className="block mt-6 bg-gradient-to-r from-cyan-400 via-blue-400 to-blue-600 text-white text-center py-3 rounded-xl font-semibold hover:brightness-110 transition">
+                Contratar
+              </a>
+            </div>
+
+          </div>
+        </section>
+
+        {/* SOBRE */}
+        <section id="sobre" className="mt-20 text-center">
+          <h2 className="text-3xl font-black text-white">Sobre mim</h2>
+
+          <p className="mt-6 text-white max-w-2xl mx-auto leading-8">
+            Sou personal trainer com quase 10 anos de experiência ajudando alunos a evoluírem de verdade, respeitando o nível, rotina e limitações de cada um.
+          </p>
+
+          <p className="mt-4 text-white max-w-2xl mx-auto leading-8">
+            Ao longo desse tempo, acompanhei diferentes perfis de alunos e entendi na prática o que realmente funciona para gerar evolução no treino.
+          </p>
+
+          <p className="mt-4 text-white max-w-2xl mx-auto leading-8">
+            Hoje, meu objetivo é te guiar com clareza e segurança para que você evolua de forma constante, sem perder tempo e sem ficar perdido no treino.
+          </p>
+        </section>
+
+        {/* FAQ */}
+        <section id="faq" className="mt-20">
+          <h2 className="text-3xl font-black text-center text-white">Dúvidas Frequentes</h2>
+
+          <div className="mt-8 grid gap-4">
+            {[
+              ["Pago todo mês?","Não. Você paga por ciclo de treino e só renova quando quiser evoluir para o próximo."],
+              ["Em quanto tempo recebo meu treino?","O treino é entregue em até 4 dias após a contratação."],
+              ["Serve para iniciantes?","Sim. O treino é ajustado conforme seu nível atual e evolução."],
+              ["Tenho contato direto com você?","Sim. Todo o acompanhamento é feito diretamente comigo, sem intermediários."],
+              ["Como recebo os treinos?","Você recebe por um app com vídeos, organização do treino e acompanhamento da evolução."],
+              ["Posso enviar vídeos para correção?","Sim. A correção da execução faz parte do acompanhamento."],
+              ["Preciso enviar fotos?","Não é obrigatório. Se não se sentir confortável, seguimos normalmente."],
+            ].map(([q,a],i)=>(
+              <div key={i} className="bg-zinc-900 border border-zinc-800 p-5 rounded-xl hover:border-cyan-400/30 transition">
+                <p className="font-semibold text-white">{q}</p>
+                <p className="text-zinc-400 mt-2">{a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+      </div>
+    </div>
+  );
+}
