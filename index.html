@@ -59,6 +59,7 @@ p {
   line-height: 1.6;
 }
 
+/* BOTÕES */
 .buttons {
   margin-top: 30px;
 }
@@ -94,34 +95,58 @@ p {
   border: 1px solid #333;
   text-align: left;
   position: relative;
+  color: #fff; /* 🔥 CORRIGE TEXTO CINZA */
 }
 
+/* 🟡 GOLD */
 .gold {
   border: 2px solid #facc15;
-  box-shadow: 0 0 20px rgba(250, 204, 21, 0.3);
+  box-shadow: 0 0 25px rgba(250, 204, 21, 0.6);
+}
+
+.gold h2 {
+  color: #facc15;
+}
+
+.gold-time {
+  color: #facc15;
+  font-weight: bold;
+  margin: 5px 0 15px;
 }
 
 .gold-btn {
   background: linear-gradient(90deg, #facc15, #eab308, #f59e0b);
 }
 
+/* 💎 PLATINUM */
 .platinum {
-  border: 2px solid #a5f3fc;
-  transform: scale(1.07);
+  border: 2px solid #c0c0c0;
+  transform: scale(1.08);
   background: linear-gradient(145deg, #0f172a, #020617);
-  box-shadow: 0 0 30px rgba(165, 243, 252, 0.4);
+  box-shadow: 0 0 40px rgba(192, 192, 192, 0.7);
   transition: 0.3s;
 }
 
 .platinum:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 50px rgba(165, 243, 252, 0.7);
+  transform: scale(1.12);
+  box-shadow: 0 0 60px rgba(192, 192, 192, 0.9);
+}
+
+.platinum h2 {
+  color: #e5e7eb;
+}
+
+.platinum-time {
+  color: #c0c0c0;
+  font-weight: bold;
+  margin: 5px 0 15px;
 }
 
 .platinum-btn {
-  background: linear-gradient(90deg, #67e8f9, #3b82f6, #1d4ed8);
+  background: linear-gradient(90deg, #c0c0c0, #94a3b8, #64748b);
 }
 
+/* OUTROS */
 .price {
   font-size: 30px;
   margin-top: 10px;
@@ -186,10 +211,14 @@ ul {
 
 <div id="planos" class="plans">
 
+<!-- GOLD -->
 <div class="plan gold">
 <h2>Plano Gold</h2>
+
+<p class="gold-time">3 meses de acompanhamento</p>
+
 <p class="price">R$300</p>
-<p class="small">3 meses de acompanhamento</p>
+<p class="small">Acompanhamento completo</p>
 
 <ul>
 <li>Treino personalizado para o seu objetivo</li>
@@ -201,6 +230,7 @@ ul {
 <a class="btn gold-btn" href="https://pages.mfitpersonal.com.br/p/2koi?checkout=true">Contratar</a>
 </div>
 
+<!-- PLATINUM -->
 <div class="plan platinum">
 
 <div style="
@@ -208,20 +238,23 @@ position:absolute;
 top:-12px;
 left:50%;
 transform:translateX(-50%);
-background:linear-gradient(90deg,#67e8f9,#3b82f6);
+background:linear-gradient(90deg,#c0c0c0,#94a3b8);
 color:white;
 padding:5px 12px;
 border-radius:20px;
 font-size:12px;
 font-weight:bold;
-box-shadow:0 0 10px rgba(103,232,249,0.6);
+box-shadow:0 0 10px rgba(192,192,192,0.6);
 ">
 MAIS ESCOLHIDO
 </div>
 
 <h2>Plano Platinum</h2>
+
+<p class="platinum-time">6 meses de acompanhamento</p>
+
 <p class="price">R$500</p>
-<p class="small">6 meses de acompanhamento</p>
+<p class="small">Acompanhamento completo</p>
 
 <ul>
 <li>Treino personalizado para o seu objetivo</li>
@@ -236,6 +269,7 @@ MAIS ESCOLHIDO
 
 </div>
 
+<!-- SOBRE -->
 <div id="sobre" class="section">
 <h2>Sobre mim</h2>
 
@@ -246,6 +280,7 @@ MAIS ESCOLHIDO
 <p>Hoje, meu objetivo é te guiar com clareza e segurança para que você evolua de forma constante, sem perder tempo e sem ficar perdido no treino.</p>
 </div>
 
+<!-- FAQ -->
 <div id="faq" class="section">
 <h2>Dúvidas Frequentes</h2>
 
@@ -253,8 +288,8 @@ MAIS ESCOLHIDO
 <div class="faq"><b>Em quanto tempo recebo meu treino?</b><br>Até 4 dias após a contratação, disponibilizado no app mfit.</div>
 <div class="faq"><b>Serve para iniciantes?</b><br>Sim, é adaptado ao seu nível, respeitando seu histórico e evolução.</div>
 <div class="faq"><b>Tenho contato direto?</b><br>Sim, direto comigo, sem equipe ou intermediários.</div>
-<div class="faq"><b>Posso enviar vídeos para correção?</b><br>Sim, O envio de vídeos para análise de execução e ajustes técnicos é ilimitado durante todo o período da consultoria. Treine com segurança e correções constantes.</div>
-<div class="faq"><b>Preciso enviar fotos?</b><br>Não é obrigatório, fazer uma análise da postura ajuda bastante, mas sua tranquilidade é prioridade. Sinta-se livre para pular essa etapa se preferir.</div>
+<div class="faq"><b>Posso enviar vídeos para correção?</b><br>Sim, o envio é ilimitado durante toda a consultoria.</div>
+<div class="faq"><b>Preciso enviar fotos?</b><br>Não é obrigatório.</div>
 
 </div>
 
