@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Team Vitinho</title>
-
 <style>
 body {
   margin: 0;
@@ -26,9 +19,8 @@ body {
   border-radius: 25px;
   background: linear-gradient(145deg, #0a0a0a, #1a1a1a);
   border: 1px solid #2a2a2a;
-  box-shadow: 
-    0 0 40px rgba(0,0,0,0.9),
-    0 0 25px rgba(59,130,246,0.25);
+  box-shadow: 0 0 40px rgba(0,0,0,0.9),
+              0 0 25px rgba(59,130,246,0.25);
   margin-bottom: 40px;
   transition: 0.3s;
 }
@@ -74,7 +66,7 @@ p {
   text-decoration: none;
 }
 
-/* PLANOS */
+/* ================= PLANOS BASE ================= */
 .plans {
   display: grid;
   grid-template-columns: 1fr;
@@ -98,74 +90,88 @@ p {
   color: #fff;
 }
 
-/* 🟡 GOLD */
+/* PREÇO */
+.price {
+  font-size: 42px;
+  font-weight: 900;
+  margin-top: 10px;
+  color: #fff;
+  text-shadow: 0 0 12px rgba(255,255,255,0.15);
+}
+
+/* TEXTO SECUNDÁRIO */
+.small {
+  font-size: 15px;
+  color: #d1d5db;
+  margin-bottom: 15px;
+  letter-spacing: 0.2px;
+}
+
+/* ================= GOLD ================= */
 .gold {
   border: 2px solid #facc15;
-  box-shadow: 0 0 25px rgba(250, 204, 21, 0.5);
+  box-shadow: 0 0 30px rgba(250, 204, 21, 0.35);
 }
 
 .gold h2 {
   color: #facc15;
+  font-weight: 800;
 }
 
 .gold-time {
   color: #facc15;
-  font-weight: bold;
-  margin: 5px 0 15px;
+  font-weight: 700;
   font-size: 16px;
+  margin: 5px 0 10px;
   text-shadow: 0 0 10px rgba(250,204,21,0.4);
+}
+
+.gold .price {
+  color: #facc15;
+  text-shadow: 0 0 18px rgba(250,204,21,0.6);
 }
 
 .gold-btn {
   background: linear-gradient(90deg, #facc15, #eab308, #f59e0b);
 }
 
-/* 💎 PLATINUM */
+/* ================= PLATINUM ================= */
 .platinum {
-  border: 2px solid #3b82f6;
+  border: 2px solid #60a5fa;
   transform: scale(1.08);
   background: linear-gradient(145deg, #0f172a, #020617);
-  box-shadow: 0 0 40px rgba(59, 130, 246, 0.5);
+  box-shadow: 0 0 40px rgba(96,165,250,0.45);
   transition: 0.3s;
 }
 
 .platinum:hover {
   transform: scale(1.12);
-  box-shadow: 0 0 60px rgba(59, 130, 246, 0.7);
+  box-shadow: 0 0 65px rgba(96,165,250,0.7);
 }
 
 .platinum h2 {
   color: #93c5fd;
+  font-weight: 800;
 }
 
 .platinum-time {
-  color: #3b82f6;
-  font-weight: bold;
-  margin: 5px 0 15px;
+  color: #60a5fa;
+  font-weight: 700;
   font-size: 16px;
-  text-shadow: 0 0 10px rgba(59,130,246,0.4);
+  margin: 5px 0 10px;
+  text-shadow: 0 0 10px rgba(96,165,250,0.4);
+}
+
+.platinum .price {
+  color: #60a5fa;
+  text-shadow: 0 0 18px rgba(96,165,250,0.7);
 }
 
 .platinum-btn {
   background: linear-gradient(90deg, #60a5fa, #3b82f6, #1d4ed8);
 }
 
-/* OUTROS */
-.price {
-  font-size: 30px;
-  margin-top: 10px;
-}
-
-.small {
-  font-size: 14px;
-  color: #aaa;
-  margin-bottom: 15px;
-}
-
-ul {
-  padding-left: 20px;
-}
-
+/* BOTÃO BASE */
 .btn {
   display: block;
   margin-top: 20px;
@@ -190,114 +196,3 @@ ul {
   text-align: left;
 }
 </style>
-
-</head>
-
-<body>
-
-<!-- LOGO -->
-<div class="logo-wrapper">
-  <div class="logo-card">
-    <img src="logo-vitinho.png" alt="Team Vitinho">
-  </div>
-</div>
-
-<div class="container">
-
-<h1>Acompanhamento direto com treino ajustado à sua realidade</h1>
-<p>Um processo claro, personalizado e focado na sua evolução — no seu ritmo e dentro da sua rotina.</p>
-
-<div class="buttons">
-<a href="#planos">Planos</a>
-<a href="#sobre">Sobre</a>
-<a href="#faq">FAQ</a>
-</div>
-
-<div id="planos" class="plans">
-
-<!-- GOLD -->
-<div class="plan gold">
-<h2>Plano Gold</h2>
-
-<p class="gold-time">3 meses de acompanhamento</p>
-
-<p class="price">R$300</p>
-<p class="small">Acompanhamento completo</p>
-
-<ul>
-<li>Treino personalizado para o seu objetivo</li>
-<li>Correção da execução dos exercícios</li>
-<li>Ajustes no treino conforme sua evolução</li>
-<li>Suporte para tirar dúvidas</li>
-</ul>
-
-<a class="btn gold-btn" href="https://pages.mfitpersonal.com.br/p/2koi?checkout=true">Contratar</a>
-</div>
-
-<!-- PLATINUM -->
-<div class="plan platinum">
-
-<div style="
-position:absolute;
-top:-12px;
-left:50%;
-transform:translateX(-50%);
-background:linear-gradient(90deg,#60a5fa,#3b82f6);
-color:white;
-padding:5px 12px;
-border-radius:20px;
-font-size:12px;
-font-weight:bold;
-box-shadow:0 0 10px rgba(59,130,246,0.6);
-">
-MAIS ESCOLHIDO
-</div>
-
-<h2>Plano Platinum</h2>
-
-<p class="platinum-time">6 meses de acompanhamento</p>
-
-<p class="price">R$500</p>
-<p class="small">Acompanhamento completo</p>
-
-<ul>
-<li>Treino personalizado para o seu objetivo</li>
-<li>Correção da execução dos exercícios</li>
-<li>Ajustes no treino conforme sua evolução</li>
-<li>Suporte prioritário para tirar dúvidas</li>
-<li>Troca do treino entre 8–12 semanas</li>
-</ul>
-
-<a class="btn platinum-btn" href="https://pages.mfitpersonal.com.br/p/2koy?checkout=true">Contratar</a>
-</div>
-
-</div>
-
-<!-- SOBRE -->
-<div id="sobre" class="section">
-<h2>Sobre mim</h2>
-
-<p>Sou personal trainer com quase 10 anos de experiência ajudando alunos a evoluírem de verdade, respeitando o nível, rotina e limitações de cada um.</p>
-
-<p>Ao longo desse tempo, acompanhei diferentes perfis de alunos e entendi na prática o que realmente funciona para gerar evolução no treino.</p>
-
-<p>Hoje, meu objetivo é te guiar com clareza e segurança para que você evolua de forma constante, sem perder tempo e sem ficar perdido no treino.</p>
-</div>
-
-<!-- FAQ -->
-<div id="faq" class="section">
-<h2>Dúvidas Frequentes</h2>
-
-<div class="faq"><b>Pago todo mês?</b><br>Não. Você paga por ciclo de treino, o que eu recomendo de 8 a 12 semanas.</div>
-<div class="faq"><b>Em quanto tempo recebo meu treino?</b><br>Até 4 dias após a contratação, disponibilizado no app mfit.</div>
-<div class="faq"><b>Serve para iniciantes?</b><br>Sim, é adaptado ao seu nível, respeitando seu histórico e evolução.</div>
-<div class="faq"><b>Tenho contato direto?</b><br>Sim, direto comigo, sem equipe ou intermediários.</div>
-<div class="faq"><b>Posso enviar vídeos para correção?</b><br>Sim, o envio é ilimitado durante toda a consultoria.</div>
-<div class="faq"><b>Preciso enviar fotos?</b><br>Não é obrigatório.</div>
-
-</div>
-
-</div>
-
-</body>
-</html>
